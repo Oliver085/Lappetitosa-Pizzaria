@@ -23,3 +23,8 @@
 @keyframes pencil-around{0%{left:13%;top:-8px;transform:rotate(-35deg)}24%{left:calc(100% - 12px);top:10%;transform:rotate(45deg)}50%{left:82%;top:calc(100% - 7px);transform:rotate(145deg)}76%{left:-5px;top:66%;transform:rotate(220deg)}100%{left:13%;top:-8px;transform:rotate(325deg)}}
 @media(max-width:800px){.main-nav .nav-link{padding:13px 4px}.main-nav .nav-link::after{bottom:8px;left:0;right:auto;width:min(180px,70%)}.main-nav .nav-link::before{right:auto;left:min(180px,70%);top:13px}.ifood-options a::before{inset:1px 3px}}
 @media(prefers-reduced-motion:reduce){.main-nav .nav-link,.main-nav .nav-link::before,.main-nav .nav-link::after,.ifood-options a,.ifood-options a::before,.ifood-options a::after{transition:none!important;animation:none!important}.ifood-options a:hover::after,.ifood-options a:focus-visible::after{opacity:1;left:auto;right:9px;top:50%;transform:translateY(-50%) rotate(0deg)}}
+
+@media (max-width: 768px), (hover: none) {
+  .button:not(.button-ifood) > span { display: none; }
+  .button:not(.button-ifood) { justify-content: center; }
+}
